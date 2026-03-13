@@ -25,9 +25,10 @@ pip install -r requirements.txt
 3. Set up PostgreSQL database:
 ```bash
 # Start PostgreSQL (if using Homebrew on macOS)
-brew services start postgresql@14
-
-# Create database
+#or
+docker exec -ti tickets_postgres /bin/bash
+su - postgres
+# Create database ()
 createdb ticket_classification
 ```
 
@@ -39,6 +40,8 @@ cp .env.example .env
 
 5. Run database migrations:
 ```bash
+flask db init
+flask db migrate -m "Description of changes"
 flask db upgrade
 ```
 
