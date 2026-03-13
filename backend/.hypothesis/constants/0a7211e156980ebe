@@ -1,0 +1,4 @@
+# file: /Users/lucalanziani/code/hackparty2026/backend/app/__init__.py
+# hypothesis_version: 6.151.9
+
+['/api', 'DATABASE_URL']

@@ -1,0 +1,4 @@
+# file: /Users/lucalanziani/code/hackparty2026/backend/app/routes/tickets.py
+# hypothesis_version: 6.151.9
+
+[100, 200, 201, 400, 404, 500, 5000, '/tickets', '/tickets/<ticket_id>', 'GET', 'POST', 'data', 'error', 'page', 'page must be >= 1', 'pages', 'pending', 'per_page', 'text', 'text cannot be empty', 'tickets', 'total']

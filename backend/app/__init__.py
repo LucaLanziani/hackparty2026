@@ -3,6 +3,7 @@ import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
+from flask_cors import CORS
 from dotenv import load_dotenv
 
 # Load environment variables
@@ -26,6 +27,9 @@ def create_app():
     # Initialize extensions
     db.init_app(app)
     migrate.init_app(app, db)
+    
+    # Enable CORS for frontend
+    CORS(app, origins=['http://localhost:5173'])
     
     # Import models to ensure they're registered with SQLAlchemy
     with app.app_context():

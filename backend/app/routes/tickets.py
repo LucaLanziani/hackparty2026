@@ -88,7 +88,7 @@ def get_ticket(ticket_id):
         - 500: Server error
     """
     try:
-        ticket = Ticket.query.get(ticket_id)
+        ticket = db.session.get(Ticket, ticket_id)
         
         if ticket is None:
             return jsonify({'data': None, 'error': f'Ticket {ticket_id} not found'}), 404

@@ -1,0 +1,4 @@
+# file: /Users/lucalanziani/code/hackparty2026/backend/app/models/ticket.py
+# hypothesis_version: 6.151.9
+
+[100, 'category', 'confidence', 'created_at', 'id', 'pending', 'status', 'text', 'tickets', 'updated_at']

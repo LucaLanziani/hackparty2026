@@ -35,7 +35,7 @@ This implementation plan breaks down the ticket text classification feature into
     - _Requirements: 3.1, 3.5, 4.1, 4.4_
 
 - [-] 3. Create tickets blueprint and API endpoints
-  - [-] 3.1 Create tickets blueprint in `backend/app/routes/tickets.py`
+  - [x] 3.1 Create tickets blueprint in `backend/app/routes/tickets.py`
     - Register blueprint with '/api' prefix
     - Implement POST /api/tickets endpoint for ticket creation
     - Implement GET /api/tickets/<ticket_id> endpoint for retrieval
@@ -44,7 +44,7 @@ This implementation plan breaks down the ticket text classification feature into
     - Add error handling and logging
     - _Requirements: 1.1, 1.2, 1.3, 1.4, 2.1, 2.4, 5.1, 5.2, 5.3, 5.4, 5.5, 6.1, 6.2, 6.3, 7.1, 7.2, 7.3, 7.4, 7.5, 10.2, 10.3, 13.1, 13.2, 13.3_
   
-  - [~] 3.2 Integrate classification service into ticket creation flow
+  - [-] 3.2 Integrate classification service into ticket creation flow
     - Initialize ClassificationService with environment variables
     - Call classify_text after ticket creation
     - Update ticket with classification results on success
@@ -70,7 +70,7 @@ This implementation plan breaks down the ticket text classification feature into
     - Test classification failure handling
     - _Requirements: 1.2, 1.3, 2.5, 4.2, 4.3, 5.2, 5.3, 5.4, 6.2, 6.3, 7.1, 7.4_
 
-- [~] 4. Configure Flask app with CORS, rate limiting, and environment variables
+- [ ] 4. Configure Flask app with CORS, rate limiting, and environment variables
   - Update `backend/app/__init__.py` to register tickets blueprint
   - Configure Flask-CORS for frontend origin (http://localhost:5173)
   - Add Flask-Limiter for rate limiting (10 requests per minute)
@@ -79,14 +79,14 @@ This implementation plan breaks down the ticket text classification feature into
   - Create `.env.example` with required environment variables
   - _Requirements: 11.1, 11.2, 11.3, 11.4, 11.5, 13.4, 13.5, 14.2, 14.3_
 
-- [~] 5. Checkpoint - Backend API complete
+- [ ] 5. Checkpoint - Backend API complete
   - Run `flask db upgrade` to ensure migrations are applied
   - Start Flask dev server and verify endpoints respond
   - Test POST /api/tickets manually with curl or Postman
   - Ensure all tests pass (if implemented)
   - Ask the user if questions arise
 
-- [~] 6. Create frontend TypeScript types and API client
+- [ ] 6. Create frontend TypeScript types and API client
   - [ ] 6.1 Define TypeScript interfaces in `frontend/src/types/ticket.ts`
     - Define ClassifiedTicket interface with all fields
     - Define CreateTicketRequest and CreateTicketResponse interfaces
