@@ -1,0 +1,4 @@
+# file: /Users/lucalanziani/code/hackparty2026/backend/app/services/classification_service.py
+# hypothesis_version: 6.151.9
+
+[0.0, 1.0, 200, 'Authorization', 'Content-Type', 'Text cannot be empty', 'application/json', 'category', 'confidence', 'text']

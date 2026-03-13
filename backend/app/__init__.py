@@ -31,4 +31,8 @@ def create_app():
     with app.app_context():
         from app.models import ticket
     
+    # Register blueprints
+    from app.routes.tickets import bp as tickets_bp
+    app.register_blueprint(tickets_bp, url_prefix='/api')
+    
     return app
