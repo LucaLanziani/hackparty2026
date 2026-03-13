@@ -20,7 +20,7 @@ def create_app():
     # Configuration - using postgresql+psycopg for psycopg3
     app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv(
         'DATABASE_URL', 
-        'postgresql+psycopg://localhost/ticket_classification'
+    'postgresql://postgres:postgres@localhost:5432/ticket_classification'
     )
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     
